@@ -17,12 +17,7 @@ a {
 
 /*body inicio*/
 
-@media screen and (max-width: 800px){
-    .titulos {
-        font-size: x-small;
-    }
 
-}
 #padre {
     min-height: 100vh; /*para que ocupe el alto completo*/
     position: relative; /*el padre relative para que el video tenga absolutos*/
@@ -66,10 +61,12 @@ video {
 
 /* CSS programas */
 
-/*imagenes*/
 .body-programas {
-    background-clip: url(images/bg-fitness.mp4);
+    background-image: url(./images/fondo6.jpg);
 }
+/*imagenes*/
+
+
 
 /* GRID */
 .container-p {  display: grid;
@@ -136,9 +133,8 @@ video {
 }
 
 
-
 .parrafo , .parrafo2 , .parrafo3 {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -146,12 +142,220 @@ video {
 
 
 
+/* CSS nosotros  */
+
+.body-nosotros {
+    background-image: url(./images/fondo6.jpg);
+    background-repeat: no-repeat;
+}
+
+/* imagenes  */
+
+.imagen-contenedor3 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.img-nosotros img {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 10%;
+    
+}
+
+.img-nosotros1 img {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 10%;
+
+    
+}
+
+.img-nosotros2 img {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 10%;
+
+}
+
+.img-nosotros3 img {
+    height: 300px;
+    width: 220px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 10%;
+
+}
+/*fin imagenes*/
+
+
+
+
+/*parrafos*/
+.parrafos-conteiner3 {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+    padding: 0 50px 0 50px ;
+    margin-bottom: 120px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+/* Fin CSS nosotros */
+
+/* CSS Suscripciones */
+
+
+.body-suscrip {
+    background-image: url(./images/fondo6.jpg);
+    background-repeat: no-repeat;
+}
+
+.h4s {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.h2s {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+.h3s {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.p-conteiner {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-conteiner {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.p-conteiner__1 {
+    background-color: grey;
+    height: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: unset;
+    border: 2px solid white;
+}
+
+.link {
+        background-image: url(./images/personal-trainer.jpg);
+        background-size: 300px;
+        height: 200px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-style: unset;
+        border: 2px solid white;
+}
+.link__1 {
+    background-image: url(./images/cross3.jpg);
+    background-size: 300px;
+    height: 200px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: unset;
+    border: 2px solid white;
+}
+.link__2 {
+    background-image: url(./images/cross4.jpg);
+    background-size: 300px;
+    height: 200px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: unset;
+    border: 2px solid white;
+}
+
+.p-conteiner__2 {
+    background-color: grey;
+    height: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: unset;
+    border: 2px solid white;
+
+}
+
+
+
+
+
+/* fin css suscripciones */
+
+
+/* css contacto */
+
+/* fin css contacto */
 
 
 /* footer */
-.footer { grid-area: footer; }
+footer { grid-area: footer; }
 footer {
-    background-color: rgb(17, 17, 17);
+    background-color: black;
     height: 40px;
     display: flex;
     align-items: center;
@@ -159,6 +363,7 @@ footer {
     font-size: 12px;
     font-style: italic;
 }
+
 .instagram {
     font-family:'Montserrat', sans-serif;
     color: white
